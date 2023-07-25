@@ -1,0 +1,74 @@
+@import './base.css';
+
+body {
+	background: var(--dark, #00050b);
+	color: white;
+	padding: 0 32px;
+	overflow-x: hidden;
+}
+
+label {
+	color: var(--white, #fff);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 100%;
+	margin-bottom: 15px;
+}
+
+input {
+	border-radius: 16px;
+	padding: 24px;
+	border: none;
+	outline: none;
+	background: linear-gradient(
+			315deg,
+			rgba(51, 123, 190, 0.2) 0%,
+			rgba(51, 123, 190, 0) 100%
+		),
+		rgba(255, 255, 255, 0.08);
+	color: var(--48, rgba(255, 255, 255, 0.48));
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 100%;
+}
+
+input::placeholder {
+	color: var(--48, rgba(255, 255, 255, 0.48));
+	font-size: 16px;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+button,
+.btn {
+	outline: none;
+	border: none;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background-color: var(--blue, #0a72d4);
+	color: var(--white, #fff);
+	text-align: center;
+	font-size: 32px;
+	line-height: 32px;
+	letter-spacing: -0.32px;
+	text-transform: uppercase;
+	cursor: pointer;
+	margin: 0 auto;
+}
+
+.sphere {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;	
+}
+@media screen and (max-width: 1150px) {
+	.sphere {
+		height: 1000px;
+	}
+}
